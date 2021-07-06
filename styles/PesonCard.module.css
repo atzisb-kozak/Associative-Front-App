@@ -1,0 +1,201 @@
+/* pesons ope 2 */
+
+.card_container{
+	position: relative;
+	width: 160px;
+	height: 280px;
+}
+
+
+/* Rectangle 17 */
+.card{
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+
+	background: #FFFFFF;
+	border: 3px solid #000000;
+	box-sizing: border-box;
+	border-radius: 26px;
+}
+
+
+
+/* Group 2 */
+.weight_group{
+position: absolute;
+left: 10%;
+right: 5.62%;
+top: 63.21%;
+bottom: 29.29%;
+}
+
+
+
+/* Poids : */
+.weight_title {
+	position: absolute;
+	left: 10%;
+	right: 55.62%;
+	top: 63.21%;
+	bottom: 29.29%;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 21px;
+	/* identical to box height */
+
+	color: #000000;
+}
+
+
+
+
+/* 140 grs */
+.weight_value {
+	position: absolute;
+	left: 56.25%;
+	right: 5.62%;
+	top: 63.21%;
+	bottom: 29.29%;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 21px;
+	/* identical to box height */
+
+	color: #000000;
+}
+
+/* Group 1 */
+.state_group{
+	position: absolute;
+	left: 10%;
+	right: 10.62%;
+	top: 31.43%;
+	bottom: 61.07%;
+}
+
+
+
+
+/* Etat : */
+.state_title {
+	position: absolute;
+	left: 10%;
+	right: 64.38%;
+	top: 31.43%;
+	bottom: 61.07%;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 21px;
+	/* identical to box height */
+
+	color: #000000;
+}
+
+
+
+
+/* Ellipse 1 */
+.state_color_actif {
+	position: absolute;
+	left: 41.25%;
+	right: 45%;
+	top: 31.43%;
+	bottom: 61.07%;
+	height:21px;
+	width: 22px;
+
+	background: #3BD714;
+	border-radius: 50%;
+}
+
+.state_color_inactif {
+	position: absolute;
+	left: 41.25%;
+	right: 45%;
+	top: 31.43%;
+	bottom: 61.07%;
+	height:21px;
+	width: 22px;
+
+	background: #F12013;
+	border-radius: 50%;
+}
+
+.state_color_enattente {
+	position: absolute;
+	left: 41.25%;
+	right: 45%;
+	top: 31.43%;
+	bottom: 61.07%;
+	height:21px;
+	width: 22px;
+
+	background: #F99A0B;
+	border-radius: 50%;
+}
+
+.state_color_maintenance {
+	position: absolute;
+	left: 41.25%;
+	right: 45%;
+	top: 31.43%;
+	bottom: 61.07%;
+	height:21px;
+	width: 22px;
+
+	background: #B80DF5;
+	border-radius: 50%;
+}
+
+
+
+/* Actif */
+.state_value{
+	position: absolute;
+	left: 65.62%;
+	right: 10.62%;
+	top: 31.43%;
+	bottom: 61.07%;
+	
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11px;
+	line-height: 21px;
+	/* identical to box height */
+	
+	color: #000000;
+}
+
+
+
+/* Peson 1 */
+.card_title {
+	position: absolute;
+	left: 23.12%;
+	right: 22.5%;
+	top: 3.21%;
+	bottom: 86.79%;
+	
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 28px;
+	
+	color: #000000;
+}
+
+
