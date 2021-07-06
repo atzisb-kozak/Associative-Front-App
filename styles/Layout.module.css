@@ -1,0 +1,127 @@
+/* layout */
+.layout_container {
+	position: relative;
+	width: 240px;
+	height: 100vh;
+}
+
+/* app */
+
+.app_container{
+	position: absolute;
+	width: 1200px;
+	height: 100vh;
+	left: 240px;
+	top: 0px;
+}
+
+
+
+
+
+/* sidebar */
+.sidebar {
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+
+	background: #51ACEE;
+}
+
+
+
+/* Marche / Arret */
+.sidebar_poweroff {
+	position: absolute;
+	width: 155px;
+	height: 28px;
+	left: 43px;
+	top: 95vh;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 28px;
+
+	color: #000000;
+}
+
+
+
+/* Dashboard */
+
+.sidebar_dashboard{
+	position: absolute;
+	left: 25.83%;
+	right: 25.42%;
+	top: 20.02%;
+	bottom: 77.25%;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 28px;
+
+	color: #FFFFFF;
+}
+
+
+/* Maintenance */
+.sidebar_maintenance{
+	position: absolute;
+	left: 21.25%;
+	right: 20.83%;
+	top: 33.98%;
+	bottom: 63.28%;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 28px;
+
+	color: #FFFFFF;
+}
+
+
+/* Etat des services */
+
+.sidebar_servicestate{
+	position: absolute;
+	left: 12.08%;
+	right: 12.08%;
+	top: 47.85%;
+	bottom: 49.41%;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 28px;
+
+	color: #FFFFFF;
+}
+
+
+
+/* Associative Endives */
+.sidebar_title{
+	position: absolute;
+	width: 213px;
+	height: 28px;
+	left: 14px;
+	top: 44px;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 28px;
+
+	color: #FFFFFF;
+}
+
