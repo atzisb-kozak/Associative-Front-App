@@ -25,11 +25,11 @@
 
 /* Group 2 */
 .weight_group{
-position: absolute;
-left: 10%;
-right: 5.62%;
-top: 63.21%;
-bottom: 29.29%;
+	position: absolute;
+	left: 6%;
+	right: 5.62%;
+	top: 63.21%;
+	bottom: 29.29%;
 }
 
 
@@ -76,7 +76,7 @@ bottom: 29.29%;
 /* Group 1 */
 .state_group{
 	position: absolute;
-	left: 10%;
+	left: 6%;
 	right: 10.62%;
 	top: 31.43%;
 	bottom: 61.07%;

@@ -1,18 +1,46 @@
+/**
+ * Module import 
+ */
 import styles from '@styles/PesonCard.module.css';
 import React, { Component } from 'react';
-let _ = require('lodash');
+import _ from "lodash"; 
 
+/**
+ * Props's interface for pesonCard component
+ * 
+ * set weight, state and nember of peson
+ *
+ * @export
+ * @interface IPesonCardProps
+ */
 export interface IPesonCardProps {
 	pesonNumber: number;
 	etat: string;
-	poids: number;
+	poids: number | null;
 }
 
+/**
+ * State's interface for pesonCard component
+ * 
+ * handle color circle for peson's state
+ *
+ * @export
+ * @interface IPesonCardState
+ */
 export interface IPesonCardState {
 	etat: string;
 	color: string;
 }
 
+/**
+ * Peson card components
+ * 
+ * show state and weight data in real time. 
+ *
+ * @export
+ * @class PesonCard
+ * @extends {Component<IPesonCardProps, IPesonCardState>}
+ */
 export class PesonCard extends Component<IPesonCardProps, IPesonCardState> {
 	static defaultProps = {
 		pesonNumber: 1,
@@ -21,7 +49,10 @@ export class PesonCard extends Component<IPesonCardProps, IPesonCardState> {
 	}
 	constructor(props: IPesonCardProps){
 		super(props)
-		this.state = {etat: this.props.etat, color: `state_color_${this.props.etat}`}
+		this.state = {
+			etat: this.props.etat, 
+			color: `state_color_${this.props.etat}`
+		}
 	}
 	render() {
 		return (
@@ -32,7 +63,7 @@ export class PesonCard extends Component<IPesonCardProps, IPesonCardState> {
 						<div className={styles.state_title}>Etat :</div>
 						<div className={styles[this.state.color]}></div>
 						<div className={styles.state_value}>
-							{this.props.etat == 'enattente' ? 'En attente' : _.capitalize(this.props.etat)}
+							{this.state.etat == 'enattente' ? 'En attente' : _.capitalize(this.state.etat)}
 							</div>
 					</div>
 					<div className={styles.weight_group}>

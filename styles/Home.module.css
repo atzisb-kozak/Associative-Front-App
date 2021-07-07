@@ -2,8 +2,6 @@
 
 .title{
 	position: absolute;
-	width: 231px;
-	height: 42px;
 	left: 725px;
 	top: 62px;
 
@@ -24,4 +22,13 @@
 	grid-template-rows: repeat(2, 1fr);
 	grid-template-columns: repeat(6, 1fr);
 	gap: 48px 24px;
+}
+
+.card_service_grid {
+	position: absolute;
+	top: 20vh;
+	left: 35vh;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	gap: 57px;
 }

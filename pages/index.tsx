@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import { IPesonCardProps, PesonCard } from '@components/pesoncard'
 import styles from '@styles/Home.module.css'
 
-const datas = [
+const datas : IPesonCardProps[] = [
 	{	pesonNumber: 1, etat: "actif", poids: 140},
 	{	pesonNumber: 2, etat: "inactif", poids: null},
 	{	pesonNumber: 3, etat: "enattente", poids: null},
@@ -17,7 +17,7 @@ const datas = [
 	{	pesonNumber: 10, etat: "actif", poids: 140},
 	{	pesonNumber: 11, etat: "actif", poids: 140},
 	{	pesonNumber: 12, etat: "actif", poids: 140},
-]
+];
 
 export default class Test extends Component {
 

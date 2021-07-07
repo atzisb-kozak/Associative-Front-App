@@ -1,6 +1,6 @@
 /* layout */
 .layout_container {
-	position: relative;
+	position: fixed;
 	width: 240px;
 	height: 100vh;
 }
@@ -8,11 +8,12 @@
 /* app */
 
 .app_container{
-	position: absolute;
-	width: 1200px;
+	position: relative;
+	width: 100em;
 	height: 100vh;
 	left: 240px;
 	top: 0px;
+	overflow: auto;
 }
 
 
