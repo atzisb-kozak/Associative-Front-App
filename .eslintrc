@@ -1,3 +1,26 @@
 {
-  "extends": ["next", "next/core-web-vitals"]
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		}
+	},
+	"plugins": ["react"],
+  "extends": ["next", "next/core-web-vitals"],
+	"rules": {
+		"no-console": "error",
+		"no-empty": "error",
+		"no-unused-vars": "warn",
+		"no-var": "error",
+		"no-await-in-loop": "error",
+		"no-async-promise-executor": "error",
+		"max-len": ["error",{"code": 100, "tabWidth": 2}],
+		"react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+		"react/display-name": "error",
+		"react/no-direct-mutation-state": "error",
+		"react/no-render-return-value": "warn",
+		"react/prop-types": "error",
+		"react/require-render-return": "error",
+	}
 }
