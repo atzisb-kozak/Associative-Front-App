@@ -1,0 +1,194 @@
+/* service actif */
+.card_container{
+	--color_actual: #000000;
+	position: relative;
+	width: 1063px;
+	height: 193px;
+}
+
+/* Rectangle 20 */
+.service_card_container{
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+
+	background: #FFFFFF;
+	border: 3px solid var(--color_actual);
+	box-sizing: border-box;
+	box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 60px;
+}
+
+/* API */
+.service_name {
+	position: absolute;
+	left: 4.52%;
+	right: 86.08%;
+	top: 11.4%;
+	bottom: 49.74%;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 64px;
+	line-height: 75px;
+	/* identical to box height */
+
+	color: #000000;
+}
+
+/* Group 1 */
+.service_state_group {
+	position: absolute;
+	left: 4.52%;
+	right: 69.99%;
+	top: 55.44%;
+	bottom: 15.54%;
+
+}
+
+/* Etat : */
+.service_state_title {
+	position: absolute;
+	top: 55.44%;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 5px;
+
+	color: #000000;
+
+}
+
+
+
+/* Ellipse 1 */
+.state_color {
+	position: absolute;
+	left: 35.25%;
+	right: 45%;
+	top: 32.44%;
+	bottom: 61.07%;
+	height: 34px;
+	width: 33px;
+	background: var(--color_actual);
+	border-radius: 50%;
+
+	background: var(--color_actual);
+	border-radius: 50%;
+}
+
+/* Actif */
+.service_state_value {
+	position: absolute;
+	left: 61.51%;
+	right: 69.99%;
+	top: 55.44%;
+	bottom: 15.54%;
+	width: 277px;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 5px;
+
+	color: #000000;
+}
+
+/* Group 6 */
+.error_button_group {
+	position: absolute;
+	left: 74.68%;
+	right: 5.55%;
+	top: 30.38%;
+	bottom: 29.02%;
+	width: 242px;
+	height: 81px;
+}
+
+/* Rectangle 21 */
+.error_button_form {
+	position: absolute;
+	width: 242px;
+	height: 81px;
+
+	background: var(--color_actual);
+	border-radius: 35px;
+}
+
+.error_button_form:hover {
+	background: linear-gradient(0deg, rgba(86, 86, 86, 0.2), rgba(86, 86, 86, 0.2)), var(--color_actual);
+}
+
+/* Voir l’erreur */
+.error_button_text {
+	position: absolute;
+	top: 27%;
+	left: 13%;
+	width: 184px;
+	height: 42px;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 42.19px;
+	text-align: center;
+
+	color: #000000;
+}
+
+/* Group 7 */
+.try_button_group {
+	position: absolute;
+	left: 48.57%;
+	right: 30.67%;
+	top: 30.38%;
+	bottom: 29.02%;
+	width: 242px;
+	height: 81px;
+}
+
+/* Rectangle 21 */
+.try_button_form {
+	position: absolute;
+	width: 242px;
+	height: 81px;
+
+	background: #FFFFFF;
+	border: 3px solid var(--color_actual);
+	box-sizing: border-box;
+	border-radius: 35px;
+}
+
+.try_button_form:hover {
+	background: #EFEFEF;
+}
+
+/* Tester */
+.try_button_text {
+	position: absolute;
+	width: 101px;
+	height: 42px;
+	top: 23%;
+	left: 28%;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 42px;
+	text-align: center;
+
+	color: var(--color_actual);
+}
+
+
+
+
+
