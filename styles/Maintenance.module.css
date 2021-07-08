@@ -1,0 +1,102 @@
+/* app */
+.maintenance_card_container {
+	position: relative;
+
+}
+
+/* app */
+.maintenance_card {
+	position: relative;
+}
+
+/* Maintenance */
+.title{
+	position: absolute;
+	left: 725px;
+	top: 62px;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 42px;
+
+	color: #000000;
+}
+
+
+
+/* Rectangle 17 */
+.maintenance_box {
+	position: absolute;
+	width: 1058px;
+	height: 590px;
+	left: 311px;
+	top: 224px;
+
+	background: #FBFBFB;
+	border: 3px solid #51ACEE;
+	box-sizing: border-box;
+	border-radius: 109px;
+}
+
+/* Rectangle 18 */
+.maintenance_button {
+	position: absolute;
+	width: 360px;
+	height: 67px;
+	left: 349px;
+	top: 426px;
+
+	background: #B80DF5;
+	border-radius: 41px;
+}
+
+.maintenance_button_active {
+	position: absolute;
+	width: 360px;
+	height: 67px;
+	left: 349px;
+	top: 426px;
+
+	background: #3BD714;
+	border-radius: 41px;
+}
+
+/* Mode maintenance */
+.maintenance_button_text {
+	position: absolute;
+	width: 309px;
+	height: 42px;
+	left: 24px;
+	top: 13px;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 42px;
+	text-align: center;
+
+	color: #FFFFFF;
+}
+
+/* Pour activer le mode maintenance, appuyer sur le bouton ci-dessous, Tant que ce mode est actif aucune mesure ne sera réalisable ainsi que la sauvegarde des données. A la sortie du mode maintenance, une vérifications sera faîtes sur toute l’infrastucture */
+.maintenance_textbox {
+	position: absolute;
+	width: 974px;
+	height: 252px;
+	left: 41px;
+	top: 95px;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 42px;
+	text-align: center;
+
+	color: #000000;
+}
+
+

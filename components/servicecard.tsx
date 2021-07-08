@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import style from '@styles/ServiceCard.module.css';
 import _ from "lodash"; 
 
@@ -26,60 +26,50 @@ export interface IServiceCardState {
  * Service card component 
  * 
  * Show name and state, user can test and see error if triggered
- *
+ * 
  * @export
- * @class ServiceCard
- * @extends {Component<IServiceCardProps, IServiceCardState>}
+ * @param {IServiceCardProps} props
+ * @return {*} 
  */
-export class ServiceCard extends Component<IServiceCardProps, IServiceCardState> {
-	constructor(props: IServiceCardProps) {
-		super(props);
-		this.state = {
-			etat: this.props.etat,
-			color: EColorConstants[this.props.etat]
-		}
+export function ServiceCard (props: IServiceCardProps) {
 
-		this.handleClick = this.handleClick.bind(this)
+	const [etat, setEtat] = useState(props.etat)
+	const [color, setColor] = useState(EColorConstants[props.etat])
+
+	const handleClick = () => {
+		setEtat('enattente');
+		setColor(EColorConstants['enattente']);
+		setTimeout(() => {
+			setEtat(props.etat);
+			setColor(EColorConstants[props.etat]);
+		},10000)
 	}
 
-	handleClick() {
-		this.setState(() => ({
-			etat: 'enattente',
-			color: EColorConstants['enattente']
-		}));
-		setTimeout(() => this.setState(() => ({
-			etat: 'actif',
-			color: EColorConstants['actif']
-		})),10000)
-	}
+	let cssPropriety: any = {}
+	cssPropriety['--color_actual'] = color
 
-	render() {
-		let cssPropriety: any = {}
-		cssPropriety['--color_actual'] = this.state.color
-
-		return (
-			<div className={style.card_container} style={cssPropriety}>
-				<div className={style.service_card_container}>
-					<div className={style.service_name}>{this.props.serviceName}</div>
-					<div className={style.service_state_group}>
-						<div className={style.service_state_title}>Etat :</div>
-						<div className={style.state_color}></div>
-						<div className={style.service_state_value}>
-							{this.state.etat == 'enattente' ? 'En attente' : _.capitalize(this.state.etat)}
-						</div>
+	return (
+		<div className={style.card_container} style={cssPropriety}>
+			<div className={style.service_card_container}>
+				<div className={style.service_name}>{props.serviceName}</div>
+				<div className={style.service_state_group}>
+					<div className={style.service_state_title}>Etat :</div>
+					<div className={style.state_color}></div>
+					<div className={style.service_state_value}>
+						{etat == 'enattente' ? 'En attente' : _.capitalize(etat)}
 					</div>
-					<div className={style.try_button_group}>
-						<div className={style.try_button_form} onClick={this.handleClick}>
-							<div className={style.try_button_text}>Tester</div>
-						</div>
+				</div>
+				<div className={style.try_button_group}>
+					<div className={style.try_button_form} onClick={handleClick}>
+						<div className={style.try_button_text}>Tester</div>
 					</div>
-					<div className={style.error_button_group}>
-						<div className={style.error_button_form}>
-							<div className={style.error_button_text}>Voir l&apos;Erreur</div>
-						</div>
+				</div>
+				<div className={style.error_button_group}>
+					<div className={style.error_button_form}>
+						<div className={style.error_button_text}>Voir l&apos;Erreur</div>
 					</div>
 				</div>
 			</div>
-		)
-	}
+		</div>
+	)
 }
